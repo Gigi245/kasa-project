@@ -12,6 +12,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
+   background-color: white;
 }
 
 .logo img {
@@ -68,8 +69,18 @@ main {
   flex-direction: column;
 }
 
-
 .page-content {
   flex: 1;
   display: flow-root;
+}
+
+@media (max-width: 768px) {
+  #root:has(.banner--about) {
+    background-color: black;
+  }
+
+  #root:has(.banner--about) .page-content {
+    flex: 0 0 auto;
+    background-color: white;
+  }
 }

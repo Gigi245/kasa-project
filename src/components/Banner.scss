@@ -21,6 +21,10 @@ background-image: linear-gradient(
   }
 }
 
+.banner--about {
+  background-image: url('../assets/_Section 1.png');
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 120px;

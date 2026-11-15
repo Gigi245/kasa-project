@@ -1,10 +1,9 @@
-
 import './Banner.scss';
 
-function Banner({ title }) {
+function Banner({ title, variant = 'home' }) {
   return (
-    <div className="banner">
-      <h1>{title}</h1>
+    <div className={`banner banner--${variant}`}>
+      {title && <h1>{title}</h1>}
     </div>
   );
 }

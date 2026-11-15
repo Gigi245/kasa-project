@@ -1,0 +1,11 @@
+.about-collapses {
+  width: 80%;
+  max-width: 1024px;
+ margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-collapses {
+    width: 100%;
+  }
+}
