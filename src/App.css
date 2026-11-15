@@ -14,10 +14,10 @@ h1 {
   padding: 30px 50px;
 }
 
-.logo {
-  font-size: 40px;
-  font-weight: bold;
-  color: #ff6060;
+.logo img {
+  display: block;
+  width: 210px;
+  height: auto;
 }
 
 .header nav {
@@ -59,4 +59,17 @@ main {
   main {
     padding: 20px;
   }
+}
+
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.page-content {
+  flex: 1;
+  display: flow-root;
 }

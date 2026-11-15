@@ -1,0 +1,46 @@
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+  padding: 80px 20px;
+
+  h1 {
+    font-size: 200px;
+    color: #ff6060;
+    margin: 0;
+  }
+
+  p {
+    font-size: 28px;
+    color: #ff6060;
+    margin: 0;
+  }
+
+  a {
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-page {
+    gap: 60px;
+    padding: 80px 20px;
+
+    h1 {
+      font-size: 96px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,18 +1,23 @@
 
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import AppRouter from './router/AppRouter';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
 
-      <main>
-        <h1>Welcome to Kasa 🏡</h1>
-        <p>Find your perfect place to stay!</p>
-      </main>
-    </div>
+      <div className="page-content">
+        <AppRouter />
+      </div>
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 
 export default App;
+
